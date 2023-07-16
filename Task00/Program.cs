@@ -7,11 +7,15 @@
 // -3 -> 9
 // -7 -> 49
 
-//string str = Console.ReadLine();
-//int number = Convert.ToInt32(str);
+//string str = Console.ReadLine();- команда для ввода данных, считывает данные с терминала. Данная команда возращает строку. 
+// Для преобразования строки в численный тип используем команду Convert.ToInt32(str). 32 - означает что данные тип данных
+// занимает в памяти компьютера 32 БИТА. 
+//int number = Convert.ToInt32(str); - создание переменной int number. 
 // -2 147 483 648 до 2 147 483 674
-Console.WriteLine("Введите целое число: ");
+Console.WriteLine("Введите целое число: "); // Запрос на ввод 
 int number = Convert.ToInt32(Console.ReadLine());
+// int number = int.Parse(Console.ReadLine()); - данный вариант преобразования строки в число проще, но используется только для 
+// строк. 
 int square = number * number;
-Console.WriteLine($"Квадрат числа {number} = {square}");
+Console.WriteLine($"Квадрат числа {number} = {square}"); // $ - интерпаляция строк, для ввыода значений переменных.
 
